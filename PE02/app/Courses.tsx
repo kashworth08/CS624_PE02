@@ -27,11 +27,7 @@ const Courses = () => {
 
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <Image source={require('../assets/icon.png')} style={styles.logo} />
-        <Text style={styles.title}>MSCS Course Catalog</Text>
-      </View>
-
+      <Image source={require('../assets/icon.png')} style={styles.logo} />
       <Text style={styles.sectionTitle}>Enter Your Favorite Course:</Text>
       <TextInput
         style={styles.input}
@@ -67,21 +63,13 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#f0ffff',
   },
-  header: {
-    alignItems: 'center',
-    marginBottom: 20,
-  },
   logo: {
-    width: 80,
-    height: 80,
+    width: 160,
+    height: 160,
     marginBottom: 10,
   },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
   sectionTitle: {
-    fontSize: 18,
+    fontSize: 24,
     fontWeight: '600',
     marginTop: 20,
     marginBottom: 5,
